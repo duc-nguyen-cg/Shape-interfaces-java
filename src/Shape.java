@@ -1,4 +1,4 @@
-public class Shape {
+public class Shape implements Resizeable{
     private String color = "green";
     private boolean filled = true;
 
@@ -33,4 +33,12 @@ public class Shape {
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
     }
+
+
+    public double getArea(){
+        return 0;
+    }
+
+    @Override
+    public void resize(double percent){}
 }
